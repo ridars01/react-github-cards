@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-const axios = require('axios')
+import background from './imgs/background.jpg' ; 
+const axios = require('axios') ; 
+
 
 
 
@@ -66,9 +68,11 @@ addNewProfileData = (profileData) =>{
   render(){
     return (
     <div>
+     
     <div className="header"> {this.props.title} </div>
      <Form onSubmit = {this.addNewProfileData}/>
      <CardList profiles={this.state.profiles} />
+     <img className = "background-img-style"src ={background}/>
     </div>
     )
   }
@@ -91,36 +95,6 @@ class Card extends React.Component{
   }
 }
 
-/*const App = ({title}) => (
-  <div className="header">{title}</div>
-)*/
-/*function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}*/
-/*
-class ConditionalStyle extends React.Component{
-  render(){
-    return (
-      <div style = {{color: Math.random() < 0.5 ? 'greenn' : 'red'}}> Looka te me . I change Colors</div>
-    )
-  }
-}*/
+
 
 export default App;

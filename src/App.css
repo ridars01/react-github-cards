@@ -40,15 +40,25 @@ body{
   display: flex ; 
   justify-content: center ; 
   text-align: center ; 
+  
+  
+}
+.background-img-style{
+  height: 90vh ;
+  width:150vh ; 
+  transform: rotate(180deg);
 }
 form{
-  border: thin solid #ddd;
+  border: 10px solid #ddd;
   padding: 2rem ; 
   margin-bottom : 2rem ; 
 }
 
 .header{
   text-align: center; 
+  border: dotted 5px black ;
+  margin-top: 30px; 
+  color: #5AAC84 ; 
   font-size: 1.5rem ; 
   margin-bottom: 1rem; 
 }
